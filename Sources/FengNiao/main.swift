@@ -1,6 +1,7 @@
 import Foundation
 import CommandLineKit
 import Rainbow
+import FengNiaoKit
 
 let cli = CommandLineKit.CommandLine()
 
@@ -63,7 +64,6 @@ let resourceExtensions = resourceExtensionOption.value ?? ["png", "jpg", "images
 let fileExtensions = fileExtensionsOption.value ?? ["swift", "m", "mm", "xib", "storyboard"]
 
 let excludedPaths = excludePathsOption.value ?? []
-
 
 
 
