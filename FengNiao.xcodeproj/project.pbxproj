@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC377BD41E8791CF0063F732 /* FileProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC377BD31E8791CF0063F732 /* FileProcess.swift */; };
 		OBJ_100 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Spectre.framework */; };
 		OBJ_107 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* main.swift */; };
 		OBJ_109 /* CommandLineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* CommandLineKit.framework */; };
@@ -162,6 +163,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC377BD31E8791CF0063F732 /* FileProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileProcess.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		OBJ_11 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		OBJ_13 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 			children = (
 				OBJ_38 /* Extensions.swift */,
 				OBJ_39 /* FengNiaoKit.swift */,
+				BC377BD31E8791CF0063F732 /* FileProcess.swift */,
 				OBJ_40 /* StringsSearchRule.swift */,
 			);
 			name = FengNiaoKit;
@@ -365,7 +368,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -373,7 +376,6 @@
 				OBJ_41 /* Tests */,
 				OBJ_45 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -545,7 +547,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -577,6 +579,7 @@
 				OBJ_124 /* Extensions.swift in Sources */,
 				OBJ_125 /* FengNiaoKit.swift in Sources */,
 				OBJ_126 /* StringsSearchRule.swift in Sources */,
+				BC377BD41E8791CF0063F732 /* FileProcess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -102,6 +102,26 @@ public struct FengNiao {
     }
     
     func resourcesInUse() -> [String: String] {
+        guard let process = FindProcess(path: projectPath, extensions: resourceExtensions, excluded:  excludedPaths) else {
+            return [:]
+        }
+        
+        let found = process.execute()
+        
+        var files = [String: String]()
+        
+        let regularDirExtensions = ["imageset", "launchimage", "appiconset", "bundle"]
+        
+        fileLoop: for file in found {
+            
+            // Skip resources in a bundle
+            let dirPath = regularDirExtensions.map { ".\($0)/" }
+            for dir in dirPath where file.contains(dir) {
+                continue fileLoop
+            }
+            
+        }
+        
         fatalError()
     }
     
